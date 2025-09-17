@@ -1,0 +1,94 @@
+{
+  "intents": [
+    {
+      "tag": "greeting",
+      "patterns": [
+        "hi", "hello", "hey", "yo", "namaste", "what's up", "howdy", "hey there", "hi bot", "hello!", "heyy", "helo", "heyyy"
+      ],
+      "responses": [
+        "Hello! How can I help you today?",
+        "Hi there! What can I do for you?",
+        "Hey! How's your day going?"
+      ]
+    },
+    {
+      "tag": "time_greeting",
+      "patterns": ["good morning", "good afternoon", "good evening", "good night"],
+      "responses": ["Hello! I can also greet you depending on the time of day."]},
+    {
+      "tag": "goodbye",
+      "patterns": [
+        "bye", "goodbye", "see you", "talk later", "catch you later", "I have to go"
+      ],
+      "responses": [
+        "Goodbye! Take care.",
+        "See you soon!",
+        "Bye! Have a great day!"
+      ]
+    },
+    {
+      "tag": "thanks",
+      "patterns": [
+        "thanks", "thank you", "appreciate it", "thx", "thanks a lot", "cheers"
+      ],
+      "responses": [
+        "You're welcome!",
+        "Happy to help!",
+        "Anytime!"
+      ]
+    },
+    {
+      "tag": "about",
+      "patterns": [
+        "who are you", "what can you do", "what is this", "tell me about yourself", "what's your purpose", "what's your job"
+      ],
+      "responses": [
+        "I'm a simple NLP chatbot that answers your questions.",
+        "I detect your intent from text and reply with the best answer."
+      ]
+    },
+    {
+      "tag": "help",
+      "patterns": [
+        "help", "i need help", "can you help me", "how to use this", "guide me"
+      ],
+      "responses": [
+        "You can say hello, ask about me, or just chat! Try: 'hello', 'who are you', or 'bye'.",
+        "Ask me something like: 'what can you do' or 'thanks'."
+      ]
+    },
+    {
+      "tag": "jokes",
+      "patterns": [
+        "tell me a joke", "make me laugh", "funny joke", "say something funny"
+      ],
+      "responses": [
+        "Why did the computer show up at work late? It had a hard drive!",
+        "Why don’t programmers like nature? It has too many bugs!"
+      ]
+    },
+    {
+      "tag": "math",
+      "patterns": [
+        "calculate", "solve", "math problem", "can you do math", "what is 5 plus 3", "multiply 6 and 7", "12+8", "50/5", "20 minus 4"
+      ],
+      "responses": [
+        "I can help with basic calculations! Try typing something like: 'what is 12 + 8' or '50/5'."
+      ]
+    },
+    {
+      "tag": "science",
+      "patterns": [
+        "what is gravity", "tell me about photosynthesis", "what is an atom", "explain relativity", "who is Newton", "what is speed of light"
+      ],
+      "responses": [
+        "I know some basic science facts! Try asking me about gravity, atoms, or speed of light."
+      ]
+    }
+  ],
+  "fallback_responses": [
+    "I'm not sure I understood that. Could you rephrase?",
+    "Hmm, I didn't catch that. Try asking in a different way.",
+    "Sorry, I don't know about that yet!"
+  ]
+}

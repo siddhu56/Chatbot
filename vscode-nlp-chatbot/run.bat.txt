@@ -1,0 +1,22 @@
+@echo off
+echo ==========================
+echo   NLP Chatbot Starter
+echo ==========================
+
+REM Step 1: Go to the inner project folder
+cd /d "%~dp0vscode-nlp-chatbot"
+
+REM Step 2: Use the venv Python directly (no activation needed)
+echo Installing dependencies...
+"..\.venv\Scripts\python.exe" -m pip install --upgrade pip
+"..\.venv\Scripts\python.exe" -m pip install -r requirements.txt
+
+REM Step 3: Train the model
+echo Training chatbot model...
+"..\.venv\Scripts\python.exe" train.py
+
+REM Step 4: Run the chatbot
+echo Starting chatbot...
+"..\.venv\Scripts\python.exe" chat.py
+
+pause
